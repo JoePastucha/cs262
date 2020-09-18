@@ -1,4 +1,4 @@
-#CS 262 - Lab 02
+# CS 262 - Lab 02
 
 This lab is based on NetNinja's series on youtube: [Click here](https://www.youtube.com/watch?v=pflXnUNMsNk&list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ&index=2)
 
