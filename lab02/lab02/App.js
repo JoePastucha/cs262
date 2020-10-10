@@ -4,12 +4,7 @@ import { StyleSheet, Text, View, TextInput, Button, FlatList } from 'react-nativ
 
 export default function App() {
 
-  const clickHandler = () => {
-      setCount(count + 1)
-      setNewAge( newAge + 1)
-      setBirthdays(
-          birthdays.concat({key: newAge.toString()})
-      );
+
   }
   const [newAge, setNewAge] = useState(0)
   const [count, setCount] = useState(0);
