@@ -1,4 +1,4 @@
---
+﻿--
 -- This SQL script builds a monopoly database, deleting any pre-existing version.
 --
 -- @author kvlinden
@@ -13,18 +13,18 @@ DROP TABLE IF EXISTS Player;
 
 -- Create the schema.
 CREATE TABLE Game (
-	ID integer PRIMARY KEY, 
+	ID integer PRIMARY KEY,
 	time timestamp
 	);
 
 CREATE TABLE Player (
-	ID integer PRIMARY KEY, 
+	ID integer PRIMARY KEY,
 	emailAddress varchar(50) NOT NULL,
 	name varchar(50)
 	);
 
 CREATE TABLE PlayerGame (
-	gameID integer REFERENCES Game(ID), 
+	gameID integer REFERENCES Game(ID),
 	playerID integer REFERENCES Player(ID),
 	score integer,
 	cash integer,
