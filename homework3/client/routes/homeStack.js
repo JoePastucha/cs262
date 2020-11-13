@@ -16,13 +16,22 @@ export default function HomeStack( {navigation} ) {
                 name="GameZone"
                 component={Home}
                 options={{
+                    title: 'HabitBuddy',
+                    headerTitleAlign: {
+                        textAlign: 'center'
+                    },
                     headerLeft: () =>  <Header navigation={navigation}/>
                 }}
             />
             <Stack.Screen
                 name="ReviewDetails"
                 component={ReviewDetails}
-                options={{title: 'Review Details'}}
+                options={{
+                    title: 'Review Details',
+                    headerTitleAlign: {
+                        textAlign: 'center'
+                    },
+                }}
             />
         </Stack.Navigator>
     );

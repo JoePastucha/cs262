@@ -13,6 +13,10 @@ export default function AboutStack( {navigation} ) {
                 name="About"
                 component={About}
                 options={{
+                    title: 'About',
+                    headerTitleAlign: {
+                        textAlign: 'center'
+                    },
                     headerLeft: () =>  <Header navigation={navigation} />
                 }}
             />
